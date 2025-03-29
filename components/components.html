@@ -1,25 +1,39 @@
-<!-- NAV COMPONENT -->
-<div id="nav-component">
-    <img class="" src="Images/lbw-logo.png" alt="Love Baked Wings Logo">
-    <ul class="flex ">
-      <li>Home</li>
-      <li><a href="menu.html">Menu</a></li>
-      <li>Loyalty</li>
-      <li>About</li>
-      <li>Catering</li>
-      <img src="Icons/search.png" alt="Search Button">
-      <button>Sign In</button>
-      <button>Join Now</button>
-      <img src="Icons/shoppingbag.png" alt="Shopping Bag Button">
-    </ul>
-  </div>
+<nav id="nav-comp" class="w-full p-6 py-[36px] bg-white">
+    <div class="flex mx-auto max-w-7xl">
+
+      <!-- image -->
+      <img src="../assets/Images/lbw-logo.png" alt="Logo" class="h-[84px]" />
+
+      <!-- nav links -->
+      <div class="flex items-center justify-between w-full">
+
+        
+        <ul class="flex font-source font-semibold space-x-6 text-blackText items-center px-[46px]">
+        <li>Home</li>
+        <li><a href="menu.html" class="hover:text-lightOrange">Menu</a></li>
+        <li>Loyalty</li>
+        <li>About</li>
+        <li>Catering</li>
+      </ul>
+        
+          <!-- CTAS -->
+          <div class="flex items-center space-x-4">
+            <button aria-label="Search">
+              <img src="../assets/Icons/search.png" alt="Search Button" class="h-8">
+            </button>
+
+            <button class="bg-white text-primaryRed rounded-full border-2 border-primaryRed px-6 py-2">Sign In</button>
+            <button class="bg-lightOrange text-white rounded-full px-6 py-2 hover:bg-darkOrange transition">Join Now</button>
+
+            <button aria-label="Shopping Bag">
+              <img src="../assets/Icons/shoppingbag.png" class="h-8" alt="Shopping Bag Button">
+           </button>
+          </div>
+
+      
+      </div>
+    </div>
+  </nav>
   
-  <!-- FOOTER COMPONENT -->
-  <div id="footer-component">
-    
-  </div>
-  
-  <!-- REWARDS BANNER COMPONENT -->
-  <div id="rewards-component">
-    
-  </div>
+
+ 

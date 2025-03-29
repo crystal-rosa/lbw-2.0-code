@@ -3,21 +3,43 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="output.css" rel="stylesheet">
+
+
+    <!-- My Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/jty4mxr.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Styles & Components -->
+    <link href="../components/components.html"/>
+    <link href="../output.css" rel="stylesheet" />
+
   </head>
-  <body class="bg-greyBG">
+
+
+  <body>
+    <!-- nav -->
     <div>
-      <div id="nav-placeholder"></div>
-
-      <div class="h-screen bg-[url(Images/HeroBanner.png)] bg-center bg-cover">
-
-      </div>
-      
+      <nav id="nav-placeholder"></nav>
     </div>
+
+    <div class="relative">
+      
+        <img src="../assets/Images/HeroBanner.png" class="w-full">
+        
+  
+      <div class="absolute inset-0 flex items-center max-w-7xl mx-auto pl-6 md:pl-0">
+          <div>
+            <h1 class="text-cremeAccent font-bold font-brandon text-5xl">BAKED FRESH.<br>LOVED BY LA.</h1>
+            <p class="text-cremeAccent text-xl my-4"> Authentic flavors, baked fresh for vegans &  non-vegans.<br><span class="italic">Voted LA'S HOTTEST.</span></p>
+            <button class="bg-lightOrange rounded-full text-white font-semibold font-source px-4 py-2 hover:bg-darkOrange transition">Order Now</button>
+            <button class="border-2 border-cremeAccent text-cremeAccent font-semibold font-source px-4 py-2 rounded-full mx-2">Join Loyalty</button>
+          </div>
+      </div>
+    </div>
+
   </body>
 </html>
+
+<script src="../javascript/main.js" defer></script>

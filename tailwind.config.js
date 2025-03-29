@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: ["./*.html",
+    "./pages/**/*.html",
+    "./components/**/*.html",
+    "./javascript/**/*.js"
+
+  ],
+  
   theme: {
     extend: {
       colors: {
@@ -11,6 +17,7 @@ module.exports = {
         cremeAccent: "#EDEADD",
         blackAccent: "#181818",
         greyBG: "#F5F5F5",
+        blackText: "#252525"
       },
       fontFamily: {
         brandon: ["brandon-grotesque", "sans-serif"],
@@ -19,4 +26,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}; 
