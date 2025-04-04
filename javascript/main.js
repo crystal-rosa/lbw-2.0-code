@@ -1,16 +1,37 @@
 fetch('../components/components.html')
-.then(res => res.text())
-.then(data => {
-  const parser = new DOMParser();
-  const htmlDoc = parser.parseFromString(data, 'text/html');
+  .then(res => res.text())
+  .then(data => {
+    const parser = new DOMParser();
+    const htmlDoc = parser.parseFromString(data, 'text/html');
 
-  const nav = htmlDoc.querySelector('#nav-comp');
-  // const footer = htmlDoc.querySelector('#footer-comp');
-  // const rewards = htmlDocquerySelector('#rewards-comp');
+    const nav = htmlDoc.querySelector('#nav-comp');
+    const rewards = htmlDoc.querySelector('#rewards-banner');
+    const footer = htmlDoc.querySelector('#footer-comp');
 
-  document.getElementById('nav-placeholder').replaceWith(nav);
-  // document.getElementById('footer-placeholder').innterHTML = footer.innerHTML;
-  // document.getElementById('rewards-placeholder').innterHTML = rewards.innterHTML;
-})
+    if (nav) {
+      document.getElementById('nav-placeholder').replaceWith(nav);
+    }
 
-.catch(err => console.error('Error loading components:', err)); 
+    if (rewards) {
+      document.getElementById('rewards-placeholder').innerHTML = rewards.outerHTML;
+    } else {
+      console.warn('No #rewards-banner found in fetched HTML');
+    }
+
+    if(footer){
+      document.getElementById('footer-placeholder').replaceWith(footer);
+    }
+  })
+  .catch(err => console.error('Error loading components:', err));
+
+
+``
+  const buttons = document.querySelectorAll(".category-btn");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      buttons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+    });
+  });
+

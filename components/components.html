@@ -1,39 +1,103 @@
-<nav id="nav-comp" class="w-full p-6 py-[36px] bg-white">
-    <div class="flex mx-auto max-w-7xl">
+<!-- Nav Menu -->
+<nav id="nav-comp" class="w-full p-6 pt-10 md:py-[32px]">
+  <div class="flex mx-auto max-w-7xl justify-between items-center w-full">
 
-      <!-- image -->
-      <img src="../assets/Images/lbw-logo.png" alt="Logo" class="h-[84px]" />
+<div class="flex items-center space-x-0">
 
-      <!-- nav links -->
-      <div class="flex items-center justify-between w-full">
 
-        
-        <ul class="flex font-source font-semibold space-x-6 text-blackText items-center px-[46px]">
-        <li>Home</li>
-        <li><a href="menu.html" class="hover:text-lightOrange">Menu</a></li>
-        <li>Loyalty</li>
-        <li>About</li>
-        <li>Catering</li>
-      </ul>
-        
-          <!-- CTAS -->
-          <div class="flex items-center space-x-4">
-            <button aria-label="Search">
-              <img src="../assets/Icons/search.png" alt="Search Button" class="h-8">
-            </button>
+    <!-- logoskis -->
+    <img src="../assets/Images/lbw-logo.png" alt="Logo" class=" h-[72px] md:h-[84px] hover:cursor-pointer" />
 
-            <button class="bg-white text-primaryRed rounded-full border-2 border-primaryRed px-6 py-2">Sign In</button>
-            <button class="bg-lightOrange text-white rounded-full px-6 py-2 hover:bg-darkOrange transition">Join Now</button>
+    <!-- nav links -->
+    <ul class="hidden lg:flex font-source space-x-6 text-blackText items-center px-[46px] pt-4">
+      <li>Home</li>
+      <li><a href="menu.html" class="hover:text-lightOrange transition">Menu</a></li>
+      <li>Loyalty</li>
+      <li>About</li>
+      <li>Catering</li>
+    </ul>
 
-            <button aria-label="Shopping Bag">
-              <img src="../assets/Icons/shoppingbag.png" class="h-8" alt="Shopping Bag Button">
-           </button>
-          </div>
+  </div>
 
-      
-      </div>
-    </div>
-  </nav>
+
+    <!-- ctas -->
+    <div class="flex items-center space-x-4">
+
+      <!-- search icon -->
+      <button aria-label="Search" class="hidden lg:flex">
+        <img src="../assets/Icons/search.png" alt="Search Button" class="h-6" />
+      </button>
+
+      <!-- sign in -->
+      <button class="hidden lg:flex bg-white text-primaryRed rounded-full border-2 border-primaryRed px-6 py-1.5">
+        Sign In
+      </button>
+
+      <!-- join now -->
+      <button class="hidden lg:flex bg-lightOrange text-white rounded-full px-6 py-2 hover:bg-darkOrange transition">
+        Join Now
+      </button>
+
+      <!-- hammy menu icon -->
+      <button aria-label="Hamburger Menu" class="lg:hidden">
+        <img src="../assets/Icons/hamburger menu.png" class="h-8 py-2" alt="Hamburger Menu" />
+      </button>
+
+      <!-- shopping bag icon -->
+      <button aria-label="Shopping Bag">
+        <img src="../assets/Icons/shoppingbag.png" class="h-7 md:h-8 pr-2" alt="Shopping Bag Button" />
+      </button>
+
   
 
- 
+    </div>
+  </div>
+</nav>
+
+<!-- Rewards Banner -->
+<div id="rewards-banner" class="px-7 pb-[50px] bg-primaryRed flex flex-col-reverse md:flex-row md:justify-center md:items-center py-[50px] md:gap-[200px]">
+  <div class="flex md:justify-center justify-end">
+    <img src="../assets/Images/lbw-bag.png" class="pt-[32px] h-[200px] md:h-[250px] lg:h-[300px] object-contain flex justify-end">
+  </div>
+  <div class="">
+    <h1 class="font-brandon font-bold text-cremeAccent text-mobile-h2 lg:text-[32px] leading-none pb-3">JOIN OUR LOYALTY<br> PROGRAM TODAY.</h1>
+    <p class="font-source text-cremeAccent text-mobile-paragraph pb-4 md:pb-5 max-w-[250px] md:max-w-[383px]">Earn points on every order and get 10% off your first order!</p>
+    <div>
+      <button class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition">Join Loyalty</button>
+      <button class="border-2 border-cremeAccent text-cremeAccent text-mobile-button md:text-desktop-button font-source px-4 py-1.5 md:px-6 md:py-1.5 rounded-full ml-2">Sign In</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer id="footer-comp" class="flex flex-row space-x-14 md:space-x-32 md:justify-center pt-16 lg:pt-[70px] px-7 bg-blackAccent border-t border-white h-[360px] md:h-[300px] lg:h-[240px] ">
+
+  <div>
+  <img src="../assets/Images/white_logo.png" class="min-h-16 h-16 md:h-[90px] pb-1 object-contain flex">
+  <div class="flex flex-row space-x-2 pl-2">
+    <img src="../assets/Icons/ig_logo.png" class="h-6">
+    <img src="../assets/Icons/facebook_logo.png" class="h-6">
+  </div>
+</div>
+
+<div class="flex flex-col pb-3 md:flex-row md:space-x-24">
+  <div>
+    <h3 class="footer-title">VISIT US</h3>
+    <p class="footer-text">7350 Melrose Ave.<br>
+      Los Angeles, CA 90046</p>
+  </div>
+  <div>
+    <h3 class="footer-title">OUR HOURS</h3>
+    <p class="footer-text">Mon - Tues: 11:30AM to 9PM<br>
+      Wed - Sun: 11:30AM to 10PM<br>
+      Closed Major Holidays</p>
+  </div>
+  <div>
+    <h3 class="footer-title">WANT TO REACH US?</h3>
+    <p class="footer-text">wings@lovebaked.com<br>
+      (323) 323-3223</p>
+  </div>
+  
+</div>
+</footer>
