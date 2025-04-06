@@ -1,66 +1,148 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- My Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/jty4mxr.css">
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/jty4mxr.css" />
 
-  <!-- Styles & Components -->
-  <link href="../components/components.html"/>
-  <link href="../output.css" rel="stylesheet" />
-  
+    <!-- Styles & Components -->
+    <link href="../components/components.html" />
+    <link href="../output.css" rel="stylesheet" />
+  </head>
 
-</head>
+  <body class="bg-backgroundDefault">
+    <!-- Nav Menu -->
+    <div>
+      <nav id="nav-placeholder"></nav>
+    </div>
 
-<body class="bg-backgroundDefault">
+    <!-- Page Title -->
+    <div class="px-6 md:px-72 bg-primaryRed h-24 md:h-32 lg:h-52">
+      <div class="flex flex-row justify-between items-stretch mx-auto max-w-7xl h-full">
+        <!-- Left: prevent shrinking -->
+        <div class="flex items-center flex-shrink-0">
+          <h1 class="text-mobile-h2 md:text-[28px] lg:text-desktop-h2 text-cremeAccent font-brandon font-bold">
+            OUR MENU
+          </h1>
+        </div>
 
-  <!-- Nav Menu -->
-  <div>
-    <nav id="nav-placeholder"></nav>
-  </div>
+        <!-- Right: prevent shrinking + align bottom -->
+        <div class="flex items-end flex-shrink-0">
+          <img src="../assets/Images/crop_bag.png" class="h-20 md:h-28 lg:h-44" />
+        </div>
+      </div>
+    </div> <!-- ✅ closing red header section -->
 
-  <!-- Page Title -->
-  <div class="px-6 md:px-72 md:h-52 h-32 bg-primaryRed">
-    <div class="flex flex-row justify-between items-stretch mx-auto max-w-7xl h-full">
-  
-  <!-- Left: prevent shrinking -->
-  <div class="flex items-center flex-shrink-0">
-    <h1 class="text-mobile-h2 md:text-[36px] lg:text-desktop-h2 text-cremeAccent font-brandon font-bold">OUR MENU</h1>
-  </div>
+    <!-- all items -->
+    <div class="px-6 md:px-0 flex flex-col md:flex-row gap-6 max-w-7xl mx-auto md:mt-6 pt-9">
+      <!-- Categories -->
+      <div class="md:w-[200px] flex-shrink-0">
+        <h3 class="text-desktop-h3 font-bold mb-4 uppercase">Categories</h3>
+        <div class="flex md:flex-col gap-4 overflow-x-auto scrollbar-hide md:overflow-visible">
+          <button class="category-btn active">WINGS & TENDERS</button>
+          <button class="category-btn">SANDWICHES</button>
+          <button class="category-btn">SPECIALS</button>
+          <button class="category-btn">DESSERTS</button>
+          <button class="category-btn">SIDES</button>
+          <button class="category-btn">DRINKS</button>
+          <button class="category-btn">SAUCES</button>
+          <button class="category-btn">VEGAN FAVORITES</button>
+        </div>
+      </div>
 
-  <!-- Right: prevent shrinking + align bottom -->
-  <div class="flex items-end flex-shrink-0">
-    <img src="../assets/Images/crop_bag.png" class="h-24 md:h-36 lg:h-44" />
-  </div>
+      <!-- Menu Cards -->
+      <div class="grid-cols-2 grid md:grid-cols-3 gap-5 max-w-[880px] mx-auto mb-11">
+        <!-- Item 1 -->
+        <div class="flex flex-col items-center min-w-[176px] md:min-w-0">
+          <div
+            class="sm:h-[200px] sm:w-[176px] md:h-[263px] md:w-[210px] lg:h-[293px] lg:w-[240px] xl:h-[313px] xl:w-[260px] bg-white rounded-[12px] p-5 flex flex-col items-center shadow-lg"
+          >
+            <img src="../assets/MenuItems/hot_habanero.png" class="lg:h-[202px] xl:h-[212px]" />
+            <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
+              HOT HABANERO
+            </h2>
+            <p class="text-desktop-details">320-590 cal</p>
+          </div>
+          <button
+            class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5"
+          >
+            Order Now
+          </button>
+        </div>
 
-</div>
+        <!-- Item 2 -->
+        <div class="flex flex-col items-center min-w-[176px] md:min-w-0">
+          <div
+            class="sm:h-[200px] sm:w-[176px] md:h-[263px] md:w-[210px] lg:h-[293px] lg:w-[240px] xl:h-[313px] xl:w-[260px] bg-white rounded-[12px] p-5 flex flex-col items-center shadow-lg"
+          >
+            <img src="../assets/MenuItems/trad_buffalo.png" class="lg:h-[202px] xl:h-[212px]" />
+            <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
+              TRAD BUFFALO
+            </h2>
+            <p class="text-desktop-details">310-590 cal</p>
+          </div>
+          <button
+            class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5"
+          >
+            Order Now
+          </button>
+        </div>
 
-<!-- all items -->
-<div class="flex flex-col gap-4">
-  <h3 class="text-lg font-bold uppercase">Categories</h3>
-<!-- Category BUTTONS -->
-  <button class="category-btn active">WINGS &<br>TENDERS</button>
-  <button class="category-btn">SANDWICHES</button>
-  <button class="category-btn">SPECIALS</button>
-  <button class="category-btn">DESSERTS</button>
-  <button class="category-btn">SIDES</button>
-  <button class="category-btn">DRINKS</button>
-  <button class="category-btn">SAUCES</button>
-  <button class="category-btn">VEGAN FAVORITES</button> 
-  
-</div>
+        <!-- Item 3 -->
+        <div class="flex flex-col items-center min-w-[176px] md:min-w-0">
+          <div
+            class="sm:h-[200px] sm:w-[176px] md:h-[263px] md:w-[210px] lg:h-[293px] lg:w-[240px] xl:h-[313px] xl:w-[260px] bg-white rounded-[12px] p-5 flex flex-col items-center shadow-lg"
+          >
+            <img src="../assets/MenuItems/sesame_ginger.png" class="lg:h-[202px] xl:h-[212px]" />
+            <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
+              SESAME GINGER
+            </h2>
+            <p class="text-desktop-details">460-610 cal</p>
+          </div>
+          <button
+            class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5"
+          >
+            Order Now
+          </button>
+        </div>
 
+        <!-- Item 4 -->
+        <div class="flex flex-col items-center min-w-[176px] md:min-w-0">
+          <div
+            class="sm:h-[200px] sm:w-[176px] md:h-[263px] md:w-[210px] lg:h-[293px] lg:w-[240px] xl:h-[313px] xl:w-[260px] bg-white rounded-[12px] p-5 flex flex-col items-center shadow-lg"
+          >
+            <img src="../assets/MenuItems/atomic_mango.png" class="lg:h-[202px] xl:h-[212px]" />
+            <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
+              ATOMIC MANGO
+            </h2>
+            <p class="text-desktop-details">260-450 cal</p>
+          </div>
+          <button
+            class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5"
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
 
-  <!-- food option/images -->
-  <div class=""></div>
-</div>
-  
+    <!-- Rewards Placeholder -->
+    <div>
+      <div id="rewards-placeholder"></div>
+    </div>
 
-
-</body>
+    <!-- Footer Placeholder -->
+    <div>
+      <footer id="footer-placeholder"></footer>
+    </div>
+  </body>
+  <script src="../javascript/main.js" defer></script>
 </html>
-<script src="../javascript/main.js" defer></script>

@@ -48,5 +48,20 @@
 
 
 .category-btn{
-  @apply font-brandon font-bold rounded-xlh-12 leading-none w-36 text-mobile-button md:text-desktop-paragraph2 px-4 py-2 md:px-4 md:py-2 transition-all;
+  @apply h-12 font-brandon font-bold rounded-[8px] w-44 text-mobile-button leading-none md:text-desktop-paragraph2 px-4 py-2 md:px-4 md:py-2 bg-white text-black shadow-md transition-all;
 }
+
+.category-btn.active {
+  @apply bg-primaryRed text-white shadow-none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  background-color: #ccc; /* light grey or whatever matches your theme */
+  border-radius: 9999px;
+}
+
