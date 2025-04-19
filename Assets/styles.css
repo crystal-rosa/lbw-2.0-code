@@ -64,4 +64,19 @@
   background-color: #ccc; /* light grey or whatever matches your theme */
   border-radius: 9999px;
 }
+/* 
+.item-container{
+  @apply flex flex-col items-center min-w-[176px] md:min-w-0 pb-64;
+}
 
+.menu-grid{
+  @apply grid-cols-2 grid md:grid-cols-3 gap-5 max-w-[880px] mx-auto mb-11;
+}
+
+.item-card{
+  @apply sm:h-[200px] sm:w-[176px] md:h-[263px] md:w-[210px] lg:h-[293px] lg:w-[240px] xl:h-[313px] xl:w-[260px] bg-black rounded-[12px] p-5 flex flex-col items-center shadow-lg;
+}
+
+.item-title{
+  @apply mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2;
+} */
