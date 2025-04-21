@@ -15,10 +15,11 @@
 
     <!-- Styles & Components -->
     <link href="../components/components.html" />
-    <link href="../output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../output.css">
+
   </head>
 
-  <body class="bg-pink-800">
+  <body class="bg-backgroundDefault">
     <!-- Nav Menu -->
     <div>
       <nav id="nav-placeholder"></nav>
@@ -27,14 +28,14 @@
     <!-- Page Title -->
     <div class="px-6 md:px-72 bg-primaryRed h-24 md:h-32 lg:h-52">
       <div class="flex flex-row justify-between items-stretch mx-auto max-w-7xl h-full">
-        <!-- Left: prevent shrinking -->
+      
         <div class="flex items-center flex-shrink-0">
           <h1 class="text-mobile-h2 md:text-[28px] lg:text-desktop-h2 text-cremeAccent font-brandon font-bold">
             OUR MENU
           </h1>
         </div>
 
-        <!-- Right: prevent shrinking + align bottom -->
+   
         <div class="flex items-end flex-shrink-0">
           <img src="../assets/Images/crop_bag.png" class="h-20 md:h-28 lg:h-44" />
         </div>
@@ -42,13 +43,13 @@
     </div> <!-- ✅ closing red header section -->
 
     <!-- all items -->
-    <div class="px-6 md:px-0 flex flex-col md:flex-row gap-6 max-w-7xl mx-auto md:mt-6 pt-9">
+    <div class="px-6 md:px-0 flex flex-col md:flex-row gap-6 max-w-7xl mx-auto md:mt-16">
       <!-- Categories -->
       <div class="md:w-[200px] flex-shrink-0">
         <h3 class="text-desktop-h3 font-bold mb-4 uppercase">Categories</h3>
         <div class="flex md:flex-col gap-4 overflow-x-auto scrollbar-hide md:overflow-visible">
           <button class="category-btn active">WINGS & TENDERS</button>
-          <button class="category-btn">SANDWICHES</button>
+          <button class="category-btn"><a href="sandwichmenu.html">SANDWICHES</a></button>
           <button class="category-btn">SPECIALS</button>
           <button class="category-btn">DESSERTS</button>
           <button class="category-btn">SIDES</button>
@@ -63,11 +64,11 @@
         <!-- Item 1 -->
         <div class="item-container">
           <div class="item-card">
-            <img src="../assets/MenuItems/hot_habanero.png" class="lg:h-[202px] xl:h-[212px]" />
+            <img src="../assets/MenuItems/traditionalwings.png" class="lg:h-[202px] xl:h-[212px]" />
             <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
-              HOT HABANERO
+              TRAD WINGS
             </h2>
-            <p class="text-desktop-details">320-590 cal</p>
+            <p class="text-desktop-details">580-890 cal</p>
           </div>
           <button class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5">
             Order Now
@@ -78,11 +79,11 @@
         <!-- Item 2 -->
         <div class="item-container">
           <div class="item-card">
-            <img src="../assets/MenuItems/trad_buffalo.png" class="lg:h-[202px] xl:h-[212px]" />
+            <img src="../assets/MenuItems/bakedwings.png" class="lg:h-[202px] xl:h-[212px]" />
             <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
-              TRAD BUFFALO
+              BAKED WINGS
             </h2>
-            <p class="text-desktop-details">310-590 cal</p>
+            <p class="text-desktop-details">410-890 cal</p>
           </div>
           <button class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5">
             Order Now
@@ -92,11 +93,11 @@
         <!-- Item 3 -->
         <div class="item-container">
           <div class="item-card">
-            <img src="../assets/MenuItems/sesame_ginger.png" class="lg:h-[202px] xl:h-[212px]"/>
+            <img src="../assets/MenuItems/breadedwings.png" class="lg:h-[202px] xl:h-[212px]"/>
             <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
-              SESAME GINGER
+              BREADED WINGS
             </h2>
-            <p class="text-desktop-details">460-610 cal</p>
+            <p class="text-desktop-details">670-810 cal</p>
           </div>
           <button
             class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5">
@@ -107,20 +108,56 @@
         <!-- Item 4 -->
         <div class="item-container">
           <div class="item-card">
-            <img src="../assets/MenuItems/atomic_mango.png" class="lg:h-[202px] xl:h-[212px]" />
+            <img src="../assets/MenuItems/chkentenders.png" class="lg:h-[202px] xl:h-[212px]" />
             <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
-              ATOMIC MANGO
+              CHKN TENDERS
             </h2>
-            <p class="text-desktop-details">260-450 cal</p>
+            <p class="text-desktop-details">450-660 cal</p>
           </div>
           <button
             class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5">
             Order Now
           </button>
         </div>
+
+
+        <!-- Item 5 -->
+        <div class="item-container">
+          <div class="item-card">
+            <img src="../assets/MenuItems/chickpeawings.png" class="lg:h-[202px] xl:h-[212px]" />
+            <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
+              CHICKPEA WINGS
+            </h2>
+            <p class="text-desktop-details">250-530 cal</p>
+          </div>
+          <button
+            class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5">
+            Order Now
+          </button>
+        </div>
+
+
+        <!-- Item 6 -->
+        <div class="item-container">
+          <div class="item-card">
+            <img src="../assets/MenuItems/cauliwings.png" class="lg:h-[202px] xl:h-[212px]" />
+            <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
+              CAULI WINGS
+            </h2>
+            <p class="text-desktop-details">330-560 cal</p>
+          </div>
+          <button
+            class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5">
+            Order Now
+          </button>
+        </div>
+
       </div>
     </div>
 
+
+
+    
     <!-- Rewards Placeholder -->
     <div>
       <div id="rewards-placeholder"></div>

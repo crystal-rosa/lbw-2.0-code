@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/jty4mxr.css" />
+
+    <!-- Styles & Components -->
+    <link href="../components/components.html" />
+    <link rel="stylesheet" href="../output.css">
+
+  </head>
+
+  <body class="bg-backgroundDefault">
+    <!-- Nav Menu -->
+    <div>
+      <nav id="nav-placeholder"></nav>
+    </div>
+
+    <!-- Page Title -->
+    <div class="px-6 md:px-72 bg-primaryRed h-24 md:h-32 lg:h-52">
+      <div class="flex flex-row justify-between items-stretch mx-auto max-w-7xl h-full">
+      
+        <div class="flex items-center flex-shrink-0">
+          <h1 class="text-mobile-h2 md:text-[28px] lg:text-desktop-h2 text-cremeAccent font-brandon font-bold">
+            OUR MENU
+          </h1>
+        </div>
+
+   
+        <div class="flex items-end flex-shrink-0">
+          <img src="../assets/Images/crop_bag.png" class="h-20 md:h-28 lg:h-44" />
+        </div>
+      </div>
+    </div> <!-- ✅ closing red header section -->
+
+    <!-- all items -->
+    <div class="px-6 md:px-0 flex flex-col md:flex-row gap-6 max-w-7xl mx-auto md:mt-16">
+      <!-- Categories -->
+      <div class="md:w-[200px] flex-shrink-0">
+        <h3 class="text-desktop-h3 font-bold mb-4 uppercase">Categories</h3>
+        <div class="flex md:flex-col gap-4 overflow-x-auto scrollbar-hide md:overflow-visible">
+          <button class="category-btn"><a href="menu.html">WINGS & TENDERS</a></button>
+          <button class="category-btn active">SANDWICHES</button>
+          <button class="category-btn">SPECIALS</button>
+          <button class="category-btn">DESSERTS</button>
+          <button class="category-btn">SIDES</button>
+          <button class="category-btn">DRINKS</button>
+          <button class="category-btn">SAUCES</button>
+          <button class="category-btn">VEGAN FAVORITES</button>
+        </div>
+      </div>
+
+      <!-- Menu Cards -->
+      <div class="menu-grid">
+        <!-- Item 1 -->
+        <div class="item-container">
+          <div class="item-card">
+            <img src="../assets/MenuItems/buffalodressing.png" class="lg:h-[202px] xl:h-[212px]" />
+            <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
+              BUFFALO SUB
+            </h2>
+            <p class="text-desktop-details">550-890 cal</p>
+          </div>
+          <button class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5">
+            Order Now
+          </button>
+        </div>
+ 
+        
+        <!-- Item 2 -->
+        <div class="item-container">
+          <div class="item-card">
+            <img src="../assets/MenuItems/redreapersub.png" class="lg:h-[202px] xl:h-[212px]" />
+            <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2">
+              RED REAPER SUB
+            </h2>
+            <p class="text-desktop-details">410-890 cal</p>
+          </div>
+          <button class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5">
+            Order Now
+          </button>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="item-container">
+          <div class="item-card">
+            <img src="../assets/MenuItems/thousandisland.png" class="lg:h-[202px] xl:h-[212px]"/>
+            <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2 whitespace-nowrap">
+              THOUSAND ISLAND
+            </h2>
+            <p class="text-desktop-details">670-810 cal</p>
+          </div>
+          <button
+            class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5">
+            Order Now
+          </button>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="item-container">
+          <div class="item-card">
+            <img src="../assets/MenuItems/chipotleranch.png" class="lg:h-[202px] xl:h-[212px]" />
+            <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2 whitespace-nowrap">
+              CHIPOTLE RANCH
+            </h2>
+            <p class="text-desktop-details">330-560 cal</p>
+          </div>
+          <button
+            class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5">
+            Order Now
+          </button>
+        </div>
+
+
+        <!-- Item 5 -->
+        <div class="item-container">
+          <div class="item-card">
+            <img src="../assets/MenuItems/caulibuffalo.png" class="lg:h-[202px] xl:h-[212px]" />
+            <h2 class="mobile-h3 md:text-[18px] lg:text-desktop-h3 font-brandon font-bold text-primaryRed pt-2 ">
+              CAULI BUFFALO
+            </h2>
+            <p class="text-desktop-details">330-560 cal</p>
+          </div>
+          <button
+            class="bg-lightOrange rounded-full text-white text-mobile-button md:text-desktop-button font-source px-3 py-2 md:px-4 md:py-2 hover:bg-darkOrange transition mt-5">
+            Order Now
+          </button>
+        </div>
+
+
+        
+
+      </div>
+    </div>
+
+
+
+    
+    <!-- Rewards Placeholder -->
+    <div>
+      <div id="rewards-placeholder"></div>
+    </div>
+
+    <!-- Footer Placeholder -->
+    <div>
+      <footer id="footer-placeholder"></footer>
+    </div>
+  </body>
+  <script src="../javascript/main.js" defer></script>
+</html>
