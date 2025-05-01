@@ -43,7 +43,6 @@ module.exports = {
         blackAccent: "#181818",
         greyBG: "#F5F5F5",
         blackText: "#252525",
-        inactiveGrey: "#A9A9A9",
         backgroundDefault: "#F5F5F5"
       },
       fontFamily: {
@@ -66,7 +65,7 @@ module.exports = {
         'desktop-h3': ['24px'],
         'desktop-h2': ['42px'],
         'desktop-h1': ['64px'],
-        'desktop-menu-title': ['28px']
+        'desktop-menu-title': ['24px']
       }
     }
   },
