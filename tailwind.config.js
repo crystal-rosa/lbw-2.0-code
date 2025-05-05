@@ -30,7 +30,9 @@ module.exports = {
     'px-4',
     'py-2',
     'md:px-4',
-    'md:py-2'
+    'md:py-2',
+    'select-btn', 
+    'select-btn.active'
   ],
   theme: {
     extend: {
@@ -52,7 +54,7 @@ module.exports = {
       fontSize: {
         'mobile-detail': ['10px'],
         'mobile-paragraph': ['14px', { lineHeight: '18px' }],
-        'mobile-button': ['12px'],
+
         'mobile-h3': ['14px'],
         'mobile-h2': ['28px'],
         'mobile-h1': ['32px'],

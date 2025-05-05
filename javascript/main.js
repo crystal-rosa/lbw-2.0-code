@@ -26,7 +26,7 @@ fetch('../components/components.html')
 
 
 ``
-  const buttons = document.querySelectorAll(".category-btn");
+  const buttons = document.querySelectorAll(".category-btn, .select-quan-btn, .select-flavor-btn");
 
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {

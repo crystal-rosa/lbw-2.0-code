@@ -29,22 +29,6 @@
   }
 }
 
-/* footer elements TITLE */
-/* .food-title {
-  @apply font-bold font-brandon text-backgroundDefault text-[12px]; 
-}
-
-@media (min-width: 640px) {
-  .food-title {
-    @apply text-[14px];
-  }
-}
-
-@media (min-width: 768px) {
-  .food-title {
-    @apply text-[20px]; 
-  }
-} */
 
 /* footer elements PARAGRAPH */
 .footer-text {
@@ -65,11 +49,27 @@
 
 
 .category-btn{
-  @apply h-12 font-brandon font-bold rounded-[8px] w-44 text-mobile-button leading-none md:text-desktop-paragraph2 px-4 py-2 md:px-4 md:py-2 bg-white text-black shadow-md transition-all;
+  @apply h-12 font-brandon font-bold rounded-[8px] w-44 text-mobile-paragraph leading-none md:text-desktop-paragraph2 px-4 py-2 md:px-4 md:py-2 bg-white text-black shadow-md transition-all;
 }
 
 .category-btn.active {
   @apply bg-primaryRed text-white shadow-none;
+}
+
+.select-quan-btn{
+  @apply h-12 font-brandon font-bold rounded-[8px] w-44 text-mobile-paragraph leading-none md:text-desktop-paragraph2 lg:px-4 lg:py-2 md:px-4 md:py-2 bg-white text-black shadow-md transition-all;
+}
+
+.select-quan-btn.active {
+  @apply bg-white border-2  border-primaryRed text-blackAccent shadow-none;
+}
+
+.select-flavor-btn{
+  @apply font-brandon font-bold rounded-[8px] w-44 text-mobile-paragraph leading-none md:text-desktop-paragraph2 h-14 md:h-28 lg:px-4 lg:py-2 md:px-4 md:py-2 bg-white text-black shadow-md transition-all;
+}
+
+.select-flavor-btn.active {
+  @apply bg-white border-2  border-primaryRed text-blackAccent shadow-none;
 }
 
 .scrollbar-hide {
@@ -92,9 +92,9 @@
 /* mb-11; */
 
 .item-card{
-  @apply sm:h-[200px] sm:w-[176px] md:h-[263px] md:w-[210px] lg:h-[293px] lg:w-[240px] xl:h-[313px] xl:w-[260px] bg-slate-500 rounded-[12px] p-5 flex flex-col items-center shadow-lg;
+  @apply sm:h-[200px] sm:w-[176px] md:h-[263px] md:w-[210px] lg:h-[293px] lg:w-[240px] xl:h-[313px] xl:w-[260px] bg-white rounded-[12px] p-5 flex flex-col items-center shadow-lg;
 }
 
-/* .item-title{
-  @apply md:text-[18px] lg:text-desktop-h3 font-brandon font-bold  pt-2;
-} */
+ .calories-price{
+  @apply text-[14px] text-goldAccent pt-3
+ }

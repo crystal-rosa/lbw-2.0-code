@@ -27,12 +27,12 @@
 
 
     <!-- Page Title -->
-    <div class="relative h-[250px] md:h-[300px] lg:h-[500px] overflow-hidden">
+    <div class="relative h-[200px] md:h-[300px] lg:h-[400px] overflow-hidden">
       <img src="../assets/Images/CustomizeBanner.png" class="w-full h-full object-cover">
 
 
       <div class="absolute inset-0  justify-center flex  flex-col items-center">
-        <div class="flex  flex-col items-center  text-cremeAccent font-brandon font-bold">
+        <div class="flex  flex-col items-center  text-white font-brandon font-bold">
           <p class="text-mobile-detail md:text-[18px] leading-none tracking-tight">CUMSTOMIZATION</p>
           <h1 class="mt-1 text-mobile-h2 md:text-[32px] lg:text-desktop-h2 leading-none tracking-tight">BAKED WINGS</h1>
         </div>
@@ -41,13 +41,108 @@
 
 
     <!-- Customization Options -->
-     <div>
-      <div class=""></div>
-      <div class=""></div>
-      <div class=""></div>
-      <div class=""></div>
-      <div class=""></div>
-     </div> 
+
+      
+      <!-- Select Quantity -->
+<div class="flex justify-center">
+  <div class="w-full max-w-[1200px] px-4 lg:px-0 ">
+
+
+    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-start gap-4 my-[40px] md:my-[80px]">
+      <h2 class="font-brandon font-bold text-desktop-h3 text-left">
+        SELECT QUANTITY
+      </h2>
+
+      <div class="grid grid-cols-2 gap-4 lg:flex lg:justify-end">
+        <div class="text-center">
+          <button class="select-quan-btn">5 PC</button>
+          <p class="calories-price">400 cal | $5.99</p>
+        </div>
+        <div class="text-center">
+          <button class="select-quan-btn">8 PC</button>
+          <p class="calories-price">640 cal | $7.99</p>
+        </div>
+        <div class="text-center">
+          <button class="select-quan-btn">10 PC</button>
+          <p class="calories-price">800 cal | $9.99</p>
+        </div>
+        <div class="text-center">
+          <button class="select-quan-btn">12 PC</button>
+          <p class="calories-price">960 cal | $10.99</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- divider -->
+    <div class="w-full h-[1.5px] bg-[#A9A9A9]"></div>
+
+  </div>
+</div>
+
+      
+      
+
+<!-- Select Flavor -->
+<div class="flex justify-center">
+  <div class="w-full max-w-[1200px] px-4 lg:px-0 ">
+
+
+    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-start gap-4 my-[40px] md:my-[80px]">
+      <h2 class="font-brandon font-bold text-desktop-h3 text-left">
+        SELECT FLAVOR
+      </h2>
+
+<div class="block lg:hidden mb-6 w-screen -mx-4 px-4">
+  <select class="w-full p-3 rounded border border-gray-300 bg-white" required>
+    <option value="" disabled selected hidden>Pick your flavor (e.g. BBQ, Habanero)</option>
+    <option>Honey BBQ</option>
+    <option>Chipotle BBQ</option>
+    <option>Hot Habanero</option>
+    <option>Parmesan Rosemary</option>
+    <option>Sesame Ginger</option>
+    <option>Trad Hot Buffalo</option>
+    <option>Atomic Mango</option>
+    <option>Lemon Pepper</option>
+    <option>Cajun Chaos</option>
+  </select>
+</div>
+
+<div class="grid grid-cols-2 gap-4 lg:flex lg:justify-end max-w-[752px]">
+    <div class="hidden lg:flex gap-4 flex-wrap">
+       <button class="select-flavor-btn">SEASAME GINGER</button>
+       <button class="select-flavor-btn">CHIPTOLE BBQ</button>
+       <button class="select-flavor-btn">HOT HABANERO</button>
+       <button class="select-flavor-btn">PARMESAN ROSEMARY</button>
+       <button class="select-flavor-btn">SESEAME GINGER</button>
+       <button class="select-flavor-btn">TRAD HOT BUFFALO</button>
+       <button class="select-flavor-btn">ATOMIC MANGO</button>
+       <button class="select-flavor-btn">LEMON PEPPER</button>
+       <button class="select-flavor-btn">CAJUN CHAOS</button>
+    </div>
+  </div>
+</div>
+
+    <!-- divider -->
+    <div class="w-full h-[1.5px] bg-[#A9A9A9]"></div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Select Side -->
+  <div class=""></div>
+
+<!-- Select Dip -->
+   <div class=""></div>
+
+
+   <div class=""></div>
+     
+
 
     
     <!-- Rewards Placeholder -->
@@ -62,3 +157,4 @@
   </body>
   <script src="../javascript/main.js" defer></script>
 </html>
+ 
