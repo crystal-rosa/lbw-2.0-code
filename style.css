@@ -72,6 +72,8 @@
   @apply bg-white border-2  border-primaryRed text-blackAccent shadow-none;
 }
 
+
+
 .scrollbar-hide {
   -ms-overflow-style: none; 
   scrollbar-width: none; /* Firefox */
@@ -89,7 +91,7 @@
 .menu-grid{
   @apply grid-cols-2 grid md:grid-cols-3 gap-5 max-w-[880px] mx-auto;  
 }
-/* mb-11; */
+
 
 .item-card{
   @apply sm:h-[200px] sm:w-[176px] md:h-[263px] md:w-[210px] lg:h-[293px] lg:w-[240px] xl:h-[313px] xl:w-[260px] bg-white rounded-[12px] p-5 flex flex-col items-center shadow-lg;
@@ -98,3 +100,13 @@
  .calories-price{
   @apply text-[14px] text-goldAccent pt-3
  }
+
+ .sides-card {
+  @apply text-center sm:h-[200px] sm:w-[176px] md:h-[263px] md:w-[150px] lg:h-[180px] lg:w-[240px] xl:h-[190px] xl:w-[176px] bg-white rounded-[12px] p-5 flex flex-col items-center shadow-lg border border-transparent;
+}
+
+
+
+.sides-card.active{
+  @apply bg-white border-2  border-primaryRed text-blackAccent shadow-none;
+}

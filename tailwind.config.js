@@ -45,7 +45,8 @@ module.exports = {
         blackAccent: "#181818",
         greyBG: "#F5F5F5",
         blackText: "#252525",
-        backgroundDefault: "#F5F5F5"
+        backgroundDefault: "#F5F5F5",
+        inactiveGrey: '#A9A9A9'
       },
       fontFamily: {
         brandon: ["brandon-grotesque", "sans-serif"],

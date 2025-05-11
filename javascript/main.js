@@ -1,3 +1,28 @@
+// Quantity buttons
+document.querySelectorAll('.select-quan-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.select-quan-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+
+// Flavor buttons
+document.querySelectorAll('.select-flavor-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.select-flavor-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+
+// SIDESSS cards
+document.querySelectorAll('.sides-card').forEach(card => {
+  card.addEventListener('click', () => {
+    document.querySelectorAll('.sides-card').forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+  });
+});
+ 
+
 fetch('../components/components.html')
   .then(res => res.text())
   .then(data => {
@@ -23,15 +48,3 @@ fetch('../components/components.html')
     }
   })
   .catch(err => console.error('Error loading components:', err));
-
-
-``
-  const buttons = document.querySelectorAll(".category-btn, .select-quan-btn, .select-flavor-btn");
-
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      buttons.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-    });
-  });
-
