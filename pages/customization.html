@@ -105,7 +105,7 @@
     <option>Lemon Pepper</option>
     <option>Cajun Chaos</option>
   </select>
-</div>
+</div> 
 
 <div class="grid grid-cols-2 gap-4 lg:flex lg:justify-end max-w-[752px]">
     <div class="hidden lg:flex gap-4 flex-wrap">
@@ -138,24 +138,24 @@
   <div class="w-full max-w-[1200px] px-4 lg:px-0 ">
 
 
-    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-start gap-4 my-[40px] md:my-[80px]">
+    <div class="flex transition-all flex-col lg:flex-row justify-between items-start lg:items-start gap-4 my-[40px] md:my-[80px]">
       <h2 class="font-brandon font-bold text-desktop-h3 text-left">
         SELECT SIDE
       </h2>
 
       <div class="grid grid-cols-2 gap-4 lg:flex lg:justify-end">
         <div class="sides-card overflow-hidden rounded-xl">
-          <img src="../assets/MenuItems/Celery.png" class="h-[100px] w-full object-cover">
+          <img src="../assets/MenuItems/Celery.png" class="h-[90px] md:h-[100px] w-full object-cover">
           <h2 class="font-brandon font-bold leading-none pt-4">CELERY & CARROT STICKS</h2>
         </div>
         <div class="sides-card overflow-hidden rounded-xl">
-          <img src="../assets/MenuItems/Fries.png" class="h-[100px] object-cover w-full">
+          <img src="../assets/MenuItems/Fries.png" class=" h-[90px] md:h-[100px] object-cover w-full">
           <h2 class="font-brandon font-bold pt-4">FRIES</h2>
         </div>
 
         <div class="text-center">
           <div class="sides-card overflow-hidden rounded-xl">
-            <img src="../assets/MenuItems/GarlicKnotts.png" class="h-[100px] w-full object-cover">
+            <img src="../assets/MenuItems/GarlicKnotts.png" class="h-[90px] md:h-[100px] w-full object-cover">
             <h2 class="font-brandon font-bold pt-4">GARLIC KNOTTS</h2>
           </div>
           <p class="calories-price">+$2.50</p>
@@ -164,7 +164,7 @@
         
         <div class="text-center">
           <div class="sides-card overflow-hidden rounded-xl">
-            <img src="../assets/MenuItems/Loadedfries.png" class="h-[100px] w-full object-cover">
+            <img src="../assets/MenuItems/Loadedfries.png" class="h-[90px] md:h-[100px] w-full object-cover">
             <h2 class="font-brandon font-bold pt-4">LOADED FRIES</h2>
           </div>
           <p class="calories-price">$3.75</p>
@@ -209,19 +209,21 @@
   </div>
   
   
-   
-
   
     <!-- Add to Bag Button -->
     <div class="flex justify-center pt-[70px]">
       <div class="w-full max-w-[1200px] px-4">
         <div class="flex justify-end">
           <div class="flex flex-col items-end gap-2">
-            <button class="flex items-center justify-between gap-6 text-white px-6 py-2 rounded-full w-[240px] shadow-md transition-all bg-lightOrange hover:bg-darkOrange">
-              <span class="font-bold text-[18px]">Add to Bag</span>
-              <span class="text-desktop-button">$13.98</span>
-            </button>
-            <p class="calories-price">← Back to Menu</p>
+            <a href="./cart.html">
+              <button class="flex items-center justify-between gap-6 text-white px-6 py-2 rounded-full shadow-md transition-all bg-lightOrange hover:bg-darkOrange">
+                <span class="font-bold text-[18px]">Add to Bag</span>
+                <span class="text-desktop-button">$13.98</span>
+              </button>
+            </a>    
+            <a href="./menu.html">        
+            <p class="calories-price hover:underline">← Back to Menu</p>
+          </a>
           </div>
         </div>
       </div>

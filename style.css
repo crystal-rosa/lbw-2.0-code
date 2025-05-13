@@ -57,7 +57,7 @@
 }
 
 .select-quan-btn{
-  @apply h-12 font-brandon font-bold rounded-[8px] w-44 text-mobile-paragraph leading-none md:text-desktop-paragraph2 lg:px-4 lg:py-2 md:px-4 md:py-2 bg-white text-black shadow-md transition-all;
+  @apply h-12 font-brandon font-bold rounded-[8px] w-44  text-mobile-paragraph leading-none md:text-desktop-paragraph2 lg:px-4 lg:py-2 md:px-4 md:py-2 bg-white text-black shadow-md transition-all;
 }
 
 .select-quan-btn.active {
@@ -102,11 +102,11 @@
  }
 
  .sides-card {
-  @apply text-center sm:h-[200px] sm:w-[176px] md:h-[263px] md:w-[150px] lg:h-[180px] lg:w-[240px] xl:h-[190px] xl:w-[176px] bg-white rounded-[12px] p-5 flex flex-col items-center shadow-lg border border-transparent;
+  @apply text-center sm:h-[180px] sm:w-[126px] md:h-[263px] md:w-[150px] lg:h-[180px] lg:w-[240px] xl:h-[190px] xl:w-[176px] bg-white rounded-[12px] p-5 flex flex-col items-center shadow-lg border border-transparent transition-all;
 }
 
 
 
 .sides-card.active{
-  @apply bg-white border-2  border-primaryRed text-blackAccent shadow-none;
+  @apply bg-white border-2  border-primaryRed text-blackAccent;
 }
