@@ -27,7 +27,7 @@
 
     <!-- entire container -->
     <div class="mt-14 max-w-7xl mx-auto flex flex-row justify-between">
-      <!-- right side -->
+      <!-- left side -->
       <div>
         <!-- Progress Bar -->
         <div class="flex items-start justify-between max-w-xl ">
@@ -68,78 +68,95 @@
 
       
 
-      <!-- left side -->
-      <div>
-        <!-- White Container/Checkout Details Box -->
-          <div class="pt-7 flex h-[620px] flex-col bg-white w-[500px] rounded-md shadow-lg font-brandon font-bold text-desktop-h3">
-            <div class="flex justify-center w-full">
-              <div class="flex rounded-lg border-2 border-primaryRed overflow-hidden w-fit h-16 ">
-                <button class="bg-primaryRed text-white px-12 h-full rounded-l-lg object-center">DELIVERY</button>
-                <button class="text-primaryRed bg-white border-l border-primaryRed px-12 h-full rounded-r-lg">PICK UP</button>
-              </div>
-            </div>
+      <!-- right side -->
+      <!-- Main Card Container -->
+<div class="w-[456px] bg-white rounded-xl shadow-md font-sans text-[15px] text-blackAccent overflow-hidden">
 
-            <div class="mt-6">
-              <h2 class="font-brandon text-blackAccent font-bold">DELIVER TO:</h2>
-              <p class="text-desktop-paragraph2 font-sans font-light pl-6 pt-2 text-blackText">1211 Halloway, <br>
-                Pasadena CA 91001
-              </p>
-              <div class="flex w-[400px] h-px bg-gray-300 mt-6"></div>
-            </div>
+  <!-- Toggle Buttons -->
+  <div class="flex justify-center pt-6 text-desktop-h3 font-brandon font-bold">
+    <div class="flex rounded-lg border-2 border-primaryRed overflow-hidden h-14">
+      <button class="bg-primaryRed text-white px-10 h-full rounded-l-lg">
+        DELIVERY
+      </button>
+      <button class="text-primaryRed bg-white border-l border-primaryRed px-10 h-full rounded-r-lg">
+        PICK UP
+      </button>
+    </div>
+  </div>
 
-            <div class="mt-6">
-              <h2 class="font-brandon text-blackAccent font-bold">TIME:</h2>
-              <div class="flex flex-row">
-                <div class="flex flex-row items-center">
-                  <p class="text-desktop-paragraph2 font-sans font-light pl-6 pr-2 text-blackText">Now</p>
-                  <input type="radio" name="Now" id="">
-                </div>
+  <!-- Content area with right padding -->
+  <div class="px-8 pt-6 pb-4 space-y-6">
 
-                <div class="flex flex-row">
-                  <p class="text-desktop-paragraph2 font-sans font-light pl-6 pr-2 text-blackText">Later</p>
-                  <input type="radio" name="Now" id="">
-                </div>
-                
-              </div>
+    <!-- PICK UP FROM section -->
+    <div>
+      <h2 class="font-bold text-[20px] text-blackAccent">PICK UP FROM:</h2>
+      <p class="pt-1 text-[15px] text-blackAccent leading-tight pl-6">
+        7350 Melrose Ave,<br />
+        Los Angeles, CA 90046
+      </p>
+    </div>
 
-              <!-- grey box delivery time -->
-              <div class="pl-6 pr-2 pt-3">
-                <div class="text-[12px] font-sans font-light bg-greyBG rounded-md w-fit py-2 px-4">
-                  Order will be delivered in 30-45 minutes.
-                </div>
-              </div>
+    <hr class="border-gray-300" />
 
-              <!-- grey line -->
-              <div class="flex w-[400px] h-px bg-gray-300 mt-6"></div>
-            </div>
+    <!-- TIME section -->
+    <div>
+      <h2 class="font-bold text-[20px] text-blackAccent  mb-2">TIME:</h2>
+      <div class="flex items-center space-x-6 pl-6">
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="time" checked class="accent-primaryRed" />
+          <span>Now</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="time" class="accent-primaryRed" />
+          <span>Later</span>
+        </label>
+      </div>
+      <div class="mt-3 pl-6">
+        <p class="bg-gray-100 text-xs rounded-md px-3 py-2 w-fit">
+          Orders ready in about 15–30 minutes.
+        </p>
+      </div>
+    </div>
 
-            <!-- input field box/promo code -->
-            <div class="mt-6">
-              <h2 class="font-brandon text-blackAccent font-bold">PROMO CODE:</h2>
-              <input type="text" placeholder="Enter Promo Code" class="ml-6 mt-3 h-11 font-sans text-[12px] font-normal w-80 px-4 py-2 border border-lightOrange rounded-md focus:outline-none focus:ring-1 focus:ring-darkOrange">
-              <div class="flex w-[400px] h-px bg-gray-300 mt-6"></div>
-            </div>
-            
-              
-              <div class="flex flex-col justify-between">
-                <div class="flex flex-row">
-                  <p class="text-desktop-paragraph2 font-sans font-light text-blackText">Subtotal</p>
-                  <p class="text-desktop-paragraph2 font-sans font-light text-blackText">$</p>
-                </div>
+    <hr class="border-gray-300" />
 
-                <div class="flex flex-row">
-                  <p class="text-desktop-paragraph2 font-sans font-light text-blackText">Tax</p>
-                  <p class="text-desktop-paragraph2 font-sans font-light text-blackText">$</p>
-                </div>
+    <!-- PROMO CODE section -->
+    <div>
+      <h2 class="font-bold text-[20px] text-blackAccent mb-2">PROMO CODE:</h2>
+      <div class="flex pl-6">
+        <input
+          type="text"
+          placeholder="Enter Promo Code"
+          class="flex-1 text-sm px-4 py-2 border border-orange-300 rounded-l-md focus:outline-none placeholder:text-gray-400"
+        />
+        <button class="bg-lightOrange text-white px-4 rounded-r-md text-sm font-bold">
+          APPLY
+        </button>
+      </div>
+    </div>
 
-                <div class="flex flex-row">
-                  <h3 class="font-bold">TOTAL</h3>
-                  <h3 class="text-primaryRed">$</h3>
-                </div>
+    <hr class="border-gray-300" />
 
-              </div>
-           
-        
+    <!-- Totals -->
+    <div class="space-y-1">
+      <div class="flex justify-between">
+        <span>Subtotal</span>
+        <span>${}</span>
+      </div>
+      <div class="flex justify-between">
+        <span>Tax</span>
+        <span>${}</span>
+      </div>
+      <div class="flex justify-between font-bold text-blackAccent text-[17px] pt-1">
+        <span>TOTAL</span>
+        <span class="text-primaryRed">${}</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 
           </div>
 

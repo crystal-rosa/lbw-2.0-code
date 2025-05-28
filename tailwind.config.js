@@ -66,7 +66,7 @@ module.exports = {
         'desktop-paragraph': ['14px', { lineHeight: '22px' }],
         'desktop-paragraph2': ['16px'],
         'desktop-footer': ['21px'],
-        'desktop-h3': ['24px'],
+        'desktop-h3': ['22px'],
         'desktop-h2': ['42px'],
         'desktop-h1': ['64px'],
         'desktop-menu-title': ['24px']
