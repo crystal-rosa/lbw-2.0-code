@@ -54,22 +54,22 @@ module.exports = {
         source: ["Source Sans 3", "sans-serif"]
       },
       fontSize: {
-        'mobile-detail': ['10px'],
-        'mobile-paragraph': ['14px', { lineHeight: '18px' }],
-
-        'mobile-h3': ['14px'],
-        'mobile-h2': ['28px'],
-        'mobile-h1': ['32px'],
-        'mobile-footer': ['16px'],
-        'desktop-details': ['12px'],
+        'mobile-detail': ['12px'],
+        'mobile-paragraph': ['16px', { lineHeight: '18px' }],
+        'mobile-h3': ['18px'],
+        'mobile-h2': ['24px'],
+        'mobile-h1': ['28px'],
+        'mobile-footer': ['14px'],
+        'desktop-details': ['13px'],
         'desktop-button': ['14px'],
-        'desktop-paragraph': ['14px', { lineHeight: '22px' }],
-        'desktop-paragraph2': ['16px'],
+        'desktop-paragraph': ['16px', { lineHeight: '22px' }],
+        'desktop-paragraph2': ['14px'],
         'desktop-footer': ['21px'],
         'desktop-h3': ['22px'],
-        'desktop-h2': ['42px'],
-        'desktop-h1': ['64px'],
-        'desktop-menu-title': ['24px']
+        'desktop-h2': ['28px'],
+        'desktop-h1': ['32px'],
+        'desktop-decor': ['48px'],
+        'desktop-menu-title': ['18px']
       }
     }
   },

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/jty4mxr.css" />
+
+    <!-- Styles & Components -->
+    <link href="../components/components.html" />
+    <link rel="stylesheet" href="../output.css" />
+  </head>
+
+  <body class="bg-backgroundDefault">
+    <!-- Nav Menu -->
+    <div>
+      <nav id="nav-placeholder"></nav>
+    </div>
+
+     <!-- entire container -->
+    <div class="mt-14 md:max-w-7xl mx-auto flex flex-col items-center md:items-start md:flex-row justify-between px-6">
+      <!-- left side -->
+      <div>
+        <!-- Progress Bar -->
+        <div class="flex items-start justify-between max-w-xl">
+          <div class="flex flex-col items-start text-center w-1/3">
+            <div class="md:w-4 md:h-4 w-3 h-3 border-2 border-primaryRed bg-white rounded-full mb-2"></div>
+            <span class="text-gray-400 font-semibold text-mobile-paragraph">CART</span>
+          </div>
+
+          <div class="flex-1 h-px bg-gray-300 -mx-32 md:-mx-48 my-2 -z-10"></div>
+
+          <div class="flex flex-col items-center text-center w-1/3">
+            <div class="md:w-4 md:h-4 w-3 h-3 bg-primaryRed rounded-full mb-2"></div>
+            <span class="text-primaryRed font-semibold text-mobile-paragraph">PAYMENT</span>
+          </div>
+
+          <div class="flex-1 h-px bg-gray-300 -mx-32 md:-mx-48 my-2 -z-10"></div>
+
+          <div class="flex flex-col items-end text-center w-1/3">
+            <div class="md:w-4 md:h-4 w-3 h-3 border-2 border-primaryRed bg-white rounded-full mb-2"></div>
+            <span class="text-gray-400 font-semibold text-mobile-paragraph">CONFIRMATION</span>
+          </div>
+        </div>
+
+        <!-- Review Order Bar -->
+        <div class="pt-9">
+          <h3 class="font-brandon text-desktop-h3 font-bold text-blackText">
+            PERSONAL DETAILS
+          </h3>
+        </div>
+
+        <!-- Menu Item Containers -->
+        <div class="pt-7">
+          <div class="h-48 w-[610px]"></div>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="w-[480px]">
+        <!-- Main Card Container -->
+        <div class="bg-white rounded-xl shadow-md font-sans text-desktop-button text-blackAccent overflow-hidden">
+          <!-- Toggle Buttons -->
+          <div class="flex px-6 pt-6 text-desktop-h3 font-brandon font-bold">
+            <h3 class="font-brandon text-desktop-h3 font-bold text-primaryRed">
+            ORDER SUMMARY
+          </h3>
+          </div>
+
+          <!-- Content Area -->
+          <div class="px-8 py-6 space-y-6">
+            <!-- PICK UP FROM section -->
+            <div>
+              <h2 class="font-bold text-[20px] text-blackAccent">CART</h2>
+              <p class="pt-1 text-mobile-h3 text-blackAccent leading-tight pl-6">
+                {MENU ITEMS HERE}
+              </p>
+            </div>
+
+            <hr class="border-gray-300" />
+
+            <!-- TIME section -->
+          <div>
+              <h2 class="font-bold text-[20px] text-blackAccent">PICK UP FROM:</h2>
+              <p class="pt-1 text-mobile-h3 text-blackAccent leading-tight pl-6">
+                7350 Melrose Ave,<br />
+                Los Angeles, CA 90046
+              </p>
+            </div>
+
+            <hr class="border-gray-300" />
+
+            <!-- PROMO CODE section -->
+            <div>
+              <h2 class="font-bold text-[20px] text-blackAccent mb-2">TIME:</h2>
+              <div class="flex items-center space-x-6 pl-6">
+                <label class="flex items-center space-x-2">
+                  <input type="radio" name="time" checked class="accent-primaryRed" />
+                  <span>Now</span>
+                </label>
+              </div>
+              <div class="mt-3 pl-6">
+                <p class="bg-gray-100 text-xs rounded-md px-3 py-2 w-fit">
+                  Orders ready in about 15–30 minutes.
+                </p>
+              </div>
+            </div>
+
+            <hr class="border-gray-300" />
+
+            <!-- Totals -->
+            <div class="space-y-1">
+              <div class="flex justify-between">
+                <span>Subtotal</span>
+                <span>${}</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Tax</span>
+                <span>${}</span>
+              </div>
+              <div class="flex justify-between font-bold text-blackAccent text-[17px] pt-1">
+                <span>TOTAL</span>
+                <span class="text-primaryRed">${}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Check Out Button OUTSIDE the card, aligned right -->
+        <div class="flex justify-end mt-4">
+          <a href="./confirmation.html"> 
+          <button class="text-white px-6 py-2 rounded-full shadow-md transition-all bg-lightOrange hover:bg-darkOrange font-bold">
+            Place Order
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Rewards Placeholder -->
+    <div>
+      <div id="rewards-placeholder"></div>
+    </div>
+
+    <!-- Footer Placeholder -->
+    <div>
+      <footer id="footer-placeholder"></footer>
+    </div>
+
+    <script src="../javascript/main.js" defer></script>
+  </body>
+</html>

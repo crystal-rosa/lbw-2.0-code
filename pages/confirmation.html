@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- My Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/jty4mxr.css" />
+
+    <!-- Styles & Components -->
+    <link href="../components/components.html" />
+    <link rel="stylesheet" href="../output.css" />
+  </head>
+
+  <body class="bg-backgroundDefault">
+    <!-- Nav Menu -->
+    <div>
+      <nav id="nav-placeholder"></nav>
+    </div>
+
+    <!-- entire div to center -->
+  <div class=" flex flex-col items-center">
+
+     <!-- top text -->
+    <div class="text-center pt-6 lg:pt-11">
+      <h1 class="px-7 font-brandon text-mobile-h2 lg:text-desktop-h1 font-bold text-primaryRed leading-none">THANKS DANIELA, YOUR ORDER IS IN THE OVEN!</h1>
+      <div class="pt-5 text-blackAccent lg:text-desktop-paragraph text-mobile-paragraph">
+        <h3 class="font-bold">
+          Order Confirmation #13412124
+        </h3>
+        <p class="text-desktop-paragraph">email receipt sent to <span class="font-bold">you@lbwuser.com</span></p>
+      </div>
+    </div>
+
+    <!-- white container -->
+    <div class="bg-white rounded-xl h-[400px] w-[400px] lg:h-[500px] lg:w-[850px] flex flex-col lg:items-center lg:justify-center shadow-md mt-8 lg:mt-11">
+      <div>
+        <img src="../assets/Images/location_map.png" class="mt-7 h-auto w-[800px] mx-auto" />
+      </div>
+
+
+    <!-- container text/order details -->
+    <div class="flex flex-col lg:flex-row lg:w-[800px] pl-6 py-6">
+      <div>
+        <h3 class="lg:text-desktop-h3 text-mobile-h3 font-brandon font-bold text-blackAccent ">ORDER DETAILS</h3>
+        <p class="lg:text-desktop-paragraph text-mobile-paragraph">Order Items Here{}</p>
+        <div class="flex flex-row pt-2 lg:pt-5">
+          <p>Total</p>
+          <p class="text-primaryRed text-mobile-paragraph lg:text-desktop-paragraph font-bold font-brandon pl-4">${TOTAL AM}</p>
+        </div>
+      </div>
+
+      <div class="text-blackAccent lg:pl-16 pt-6 lg:pt-0">
+        <h3 class="lg:text-desktop-h3 text-mobile-h3 font-brandon font-bold">PICK UP DETAILS</h3>
+        <p class="lg:text-desktop-paragraph text-mobile-paragraph">Crystal Rosa<br>Pick Up at 11:02PM</p>
+      </div>
+    </div>
+  </div>
+
+   
+    </div>
+
+
+    <!-- Rewards Placeholder -->
+    <div>
+      <div id="rewards-placeholder"></div>
+    </div>
+
+    <!-- Footer Placeholder -->
+    <div>
+      <footer id="footer-placeholder"></footer>
+    </div>
+
+    <script src="../javascript/main.js" defer></script>
+  </body>
+</html>
